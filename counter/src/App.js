@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './App.css'
+import './bootstrap.min.css'
 
 class App extends Component
 {
@@ -8,8 +9,22 @@ render()
   return(
 
     <div align='center'>
+   
 
-      <Counter />
+      <Counter />            
+            
+
+    <br></br> 
+    <div class="container name">
+    <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <h1> Jatupat Pannoi</h1>
+       <h3>#GTfarng</h3>
+    </div>
+    <div class="col-sm-2"></div>
+    </div>
+    </div>
    
     </div>
 
@@ -71,23 +86,45 @@ render()
   
   return(
 
-    <div align='center' stype="background-color:red">
+    <div>
+    
+    <br></br> 
+    <div class="container bg-info">
+    <div class="row">
+    <div class="col-sm-2 "></div>
+    <div class="col-sm-8">
+     
+     <h1 class="display-6 "> Counter App </h1>
+           
+    </div>
+    <div class="col-sm-2 "></div>
+    </div>
+    </div>
 
-    <h1> Counter App </h1>
-        <h2>Counter : {this.state.Num} </h2> 
+    <div class="container bg-light">
+    <div class="row">
+    <div class="col-sm-2 "></div>
+    <div class="col-sm-8">
+     <br></br>
+     <h3>Counter : {this.state.Num} </h3> <br></br>
 
         <form onSubmit={this.Submit}>
         <label>
-          Enter Number :
-          <input type="text" value={this.state.value} onChange={this.Change} />
+      
+          <input type="text" placeholder="Enter Number" value={this.state.value} onChange={this.Change} />
         </label>
-        <input type="submit" value="Submit" />
+        <input class="btn btn-success" type="submit" value="Set" />
       </form>
       
-        <button onClick={()=> this.ops('Up')}>Up</button>
-        <button onClick={()=> this.ops('Down')}>Down</button>
-        <button onClick={()=> this.ops('Reset')}>Reset</button>
-        
+        <button class="btn btn-primary" onClick={()=> this.ops('Up')}>Up</button>
+        <button class="btn btn-danger" onClick={()=> this.ops('Down')}>Down</button>
+        <button class="btn btn-warning" onClick={()=> this.ops('Reset')}>Reset</button>
+
+    </div>
+    <div class="col-sm-2 "></div>
+    </div>
+    </div>
+
     </div>
  
           )}

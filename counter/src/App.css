@@ -31,3 +31,29 @@
     transform: rotate(360deg);
   }
 }
+
+#head{
+
+  font-family: "Lucida Console";
+  font-size: 60px;
+
+
+}
+
+.name{
+
+  font-family: "Georgia";
+  font-size: 30px;
+  background-color:lightblue;
+}
+
+.colors{
+
+  background-color:red;
+
+}
+
+.app{
+
+  background-color:light;
+}
